@@ -5,15 +5,13 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBWcvLajRZaWzEabiTXT9PI3j7y_RiwIUM",
-  authDomain: "router-firebase-integration.firebaseapp.com",
-  projectId: "router-firebase-integration",
-  storageBucket: "router-firebase-integration.appspot.com",
-  messagingSenderId: "952807815347",
-  appId: "1:952807815347:web:2cc5d48e0443b8dd07d8c6"
+  apiKey: "AIzaSyB6X-Wtehh_ORMvaZZjlBAuBnuWhfRrhVc",
+  authDomain: "router-firebase-integrat-aa884.firebaseapp.com",
+  projectId: "router-firebase-integrat-aa884",
+  storageBucket: "router-firebase-integrat-aa884.appspot.com",
+  messagingSenderId: "2101093004",
+  appId: "1:2101093004:web:bfd3fbfdb8393abcd451a9"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-export default app;

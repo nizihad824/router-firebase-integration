@@ -1,0 +1,7 @@
+.header nav a{
+    text-decoration: none;
+    margin-left: 20px;
+}
+.header nav a:hover {
+    color: orangered;
+}
