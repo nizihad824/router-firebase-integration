@@ -13,28 +13,28 @@ const useFirebase = () => {
     const signInWithGoogle = () => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
-                const user = result.user ;
+                const user = result.user;
                 setUser(user)
                 console.log(user);
             })
 
-            }
-
-            const handleSignOut = () =>{
-                signOut(auth)
-                .then(() =>{})
-            }
-            
-            useEffect( ()=>{
-                onAuthStateChanged(auth, user =>{
-                    setUser(user);
-                })
-            }, []);
-    return {
-            user,
-            signInWithGoogle,
-            handleSignOut
-        }
-
     }
-    export default useFirebase
+
+    const handleSignOut = () => {
+        signOut(auth)
+            .then(() => { })
+    }
+
+    useEffect(() => {
+        onAuthStateChanged(auth, user => {
+            setUser(user);
+        })
+    }, []);
+    return {
+        user,
+        signInWithGoogle,
+        handleSignOut
+    }
+
+}
+export default useFirebase
